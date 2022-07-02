@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>CLIENT_ID</key>
+	<string>INSERT_KEY_HERE</string>
+	<key>API_KEY</key>
+	<string>INSERT_KEY_HERE</string>
 </dict>
 </plist>
