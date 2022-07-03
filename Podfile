@@ -8,5 +8,6 @@ target 'Jelajah' do
   # Pods for Jelajah
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
+  pod 'Alamofire', '5.6.1'
 
 end

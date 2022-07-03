@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822D2781287173BC00AA600A /* SearchQueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D2780287173BC00AA600A /* SearchQueryModel.swift */; };
 		82859E07287070C2008759AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82859E06287070C2008759AC /* AppDelegate.swift */; };
-		82859E09287070C2008759AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82859E08287070C2008759AC /* SceneDelegate.swift */; };
 		82859E0B287070C2008759AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82859E0A287070C2008759AC /* ViewController.swift */; };
 		82859E0E287070C2008759AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82859E0C287070C2008759AC /* Main.storyboard */; };
 		82859E10287070C4008759AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82859E0F287070C4008759AC /* Assets.xcassets */; };
 		82859E13287070C4008759AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82859E11287070C4008759AC /* LaunchScreen.storyboard */; };
+		82A712BD2870793B0036818A /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A712BC2870793B0036818A /* BusinessModel.swift */; };
+		82A712C128707FD40036818A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A712C028707FD40036818A /* Endpoint.swift */; };
+		82A712C328707FE60036818A /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A712C228707FE60036818A /* SearchRepository.swift */; };
+		82A9873A28708C6600A5B4C2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9873928708C6600A5B4C2 /* SearchViewModel.swift */; };
+		82A9873D28708CC500A5B4C2 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9873C28708CC500A5B4C2 /* LocationServices.swift */; };
 		F26671BCF4D2C81DFEB3583E /* Pods_Jelajah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A7B5532A2F6680D915BE35 /* Pods_Jelajah.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30A7B5532A2F6680D915BE35 /* Pods_Jelajah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jelajah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822D2780287173BC00AA600A /* SearchQueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryModel.swift; sourceTree = "<group>"; };
 		82859E03287070C2008759AC /* Jelajah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jelajah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82859E06287070C2008759AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82859E08287070C2008759AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		82859E0A287070C2008759AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82859E0D287070C2008759AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82859E0F287070C4008759AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82859E12287070C4008759AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82859E14287070C4008759AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A712BC2870793B0036818A /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
+		82A712C028707FD40036818A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		82A712C228707FE60036818A /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		82A9873928708C6600A5B4C2 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		82A9873C28708CC500A5B4C2 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		EFE76ACE4F6AB22CAC07492C /* Pods-Jelajah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jelajah.release.xcconfig"; path = "Target Support Files/Pods-Jelajah/Pods-Jelajah.release.xcconfig"; sourceTree = "<group>"; };
 		F63B23A5810ECB2175E6C60F /* Pods-Jelajah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jelajah.debug.xcconfig"; path = "Target Support Files/Pods-Jelajah/Pods-Jelajah.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,8 +66,28 @@
 				F63B23A5810ECB2175E6C60F /* Pods-Jelajah.debug.xcconfig */,
 				EFE76ACE4F6AB22CAC07492C /* Pods-Jelajah.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		821BEF952871A82600B5F0D0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				82859E06287070C2008759AC /* AppDelegate.swift */,
+				82859E0F287070C4008759AC /* Assets.xcassets */,
+				82859E11287070C4008759AC /* LaunchScreen.storyboard */,
+				82859E14287070C4008759AC /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		821BEF962871A83600B5F0D0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				82859E0A287070C2008759AC /* ViewController.swift */,
+				82859E0C287070C2008759AC /* Main.storyboard */,
+				82A9873928708C6600A5B4C2 /* SearchViewModel.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		82859DFA287070C2008759AC = {
@@ -81,15 +111,47 @@
 		82859E05287070C2008759AC /* Jelajah */ = {
 			isa = PBXGroup;
 			children = (
-				82859E06287070C2008759AC /* AppDelegate.swift */,
-				82859E08287070C2008759AC /* SceneDelegate.swift */,
-				82859E0A287070C2008759AC /* ViewController.swift */,
-				82859E0C287070C2008759AC /* Main.storyboard */,
-				82859E0F287070C4008759AC /* Assets.xcassets */,
-				82859E11287070C4008759AC /* LaunchScreen.storyboard */,
-				82859E14287070C4008759AC /* Info.plist */,
+				82A9873B28708CBA00A5B4C2 /* Services */,
+				821BEF952871A82600B5F0D0 /* SupportingFiles */,
+				821BEF962871A83600B5F0D0 /* Features */,
+				82A712BE28707FB10036818A /* Data */,
 			);
 			path = Jelajah;
+			sourceTree = "<group>";
+		};
+		82A712BE28707FB10036818A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				82A712BF28707FBB0036818A /* Models */,
+				82A712C028707FD40036818A /* Endpoint.swift */,
+				82A712C428707FFD0036818A /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		82A712BF28707FBB0036818A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82A712BC2870793B0036818A /* BusinessModel.swift */,
+				822D2780287173BC00AA600A /* SearchQueryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82A712C428707FFD0036818A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				82A712C228707FE60036818A /* SearchRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		82A9873B28708CBA00A5B4C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82A9873C28708CC500A5B4C2 /* LocationServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				82859E0B287070C2008759AC /* ViewController.swift in Sources */,
+				82A9873A28708C6600A5B4C2 /* SearchViewModel.swift in Sources */,
 				82859E07287070C2008759AC /* AppDelegate.swift in Sources */,
-				82859E09287070C2008759AC /* SceneDelegate.swift in Sources */,
+				82A712C328707FE60036818A /* SearchRepository.swift in Sources */,
+				82A712BD2870793B0036818A /* BusinessModel.swift in Sources */,
+				82A9873D28708CC500A5B4C2 /* LocationServices.swift in Sources */,
+				822D2781287173BC00AA600A /* SearchQueryModel.swift in Sources */,
+				82A712C128707FD40036818A /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +426,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DS8DA7YN5X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Jelajah/Info.plist;
+				INFOPLIST_FILE = Jelajah/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,7 +456,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DS8DA7YN5X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Jelajah/Info.plist;
+				INFOPLIST_FILE = Jelajah/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

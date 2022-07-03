@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Jelajah uses your location to display nearby business location</string>
+	<key>CLIENT_ID</key>
+	<string>eaX5nZCjsEC060kTo54JrQ</string>
+	<key>API_KEY</key>
+	<string>Rv5Obc8wp487XjDH2a-UJY7Uwuy-i8nP5SxDfDkksqvn_Yvn0AH1EDtaG03Zs1OZgU4qaCyRufM6On7-3nVpqW951Lr45uRaGOSvKXX-ps6jfKl0eoQrpz5x-j3AYnYx</string>
+</dict>
+</plist>
