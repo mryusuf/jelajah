@@ -9,6 +9,7 @@ import RxSwift
 
 protocol SearchViewModelProtocol {
     var businessModel: Observable<BusinessModel> { get }
+    var isLoading: Observable<Bool> { get }
     func postSearchQuery(with query: String)
 }
 
@@ -16,10 +17,15 @@ final class SearchViewModel: SearchViewModelProtocol {
     private let locationService: LocationServiceProtocol
     private let searchRepository: SearchRepositoryProtocol
     private let businessModelSubject: PublishSubject<BusinessModel> = .init()
+    private let isLoadingSubject: PublishSubject<Bool> = .init()
     private let disposeBag = DisposeBag()
     
     var businessModel: Observable<BusinessModel> {
         businessModelSubject.asObservable()
+    }
+    
+    var isLoading: Observable<Bool> {
+        isLoadingSubject.asObservable()
     }
     
     init(
@@ -33,15 +39,20 @@ final class SearchViewModel: SearchViewModelProtocol {
     
     func postSearchQuery(with query: String) {
         
+        isLoadingSubject.onNext(true)
+        
         locationService.getCurrentLatituteLongitude()
-            .flatMapLatest { center in
+            .take(1)
+            .flatMapLatest { [unowned self] center in
                 self.searchRepository.fetchSearchData(params: SearchQueryModel(term: query, latitude: center.latitude, longitude: center.longitude))
             }
-            .take(1)
-            .subscribe(onNext: { data in
+            .subscribe(onNext: { [weak self] data in
                 print(data)
+                self?.businessModelSubject.onNext(data)
             }, onError: { error in
-                print(error.localizedDescription)
+                print(error.asAFError?.localizedDescription)
+            }, onCompleted: { [weak self] in
+                self?.isLoadingSubject.onNext(false)
             })
             .disposed(by: disposeBag)
     }

@@ -1,5 +1,5 @@
 //
-//  LocationServices.swift
+//  LocationService.swift
 //  Jelajah
 //
 //  Created by Indra Permana on 02/07/22.

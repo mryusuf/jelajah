@@ -30,7 +30,7 @@ struct SearchRepository: SearchRepositoryProtocol {
                             observer.onNext(value)
                             observer.onCompleted()
                         case .failure(let error):
-                            observer.onError(NSError(domain: "SearchRepository Error: \(error.localizedDescription)", code: error.responseCode ?? 400))
+                            observer.onError(error)
                         }
                     }
             }

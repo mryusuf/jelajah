@@ -17,7 +17,7 @@
 		82A712C128707FD40036818A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A712C028707FD40036818A /* Endpoint.swift */; };
 		82A712C328707FE60036818A /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A712C228707FE60036818A /* SearchRepository.swift */; };
 		82A9873A28708C6600A5B4C2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9873928708C6600A5B4C2 /* SearchViewModel.swift */; };
-		82A9873D28708CC500A5B4C2 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9873C28708CC500A5B4C2 /* LocationServices.swift */; };
+		82A9873D28708CC500A5B4C2 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9873C28708CC500A5B4C2 /* LocationService.swift */; };
 		F26671BCF4D2C81DFEB3583E /* Pods_Jelajah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A7B5532A2F6680D915BE35 /* Pods_Jelajah.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		82A712C028707FD40036818A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		82A712C228707FE60036818A /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		82A9873928708C6600A5B4C2 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		82A9873C28708CC500A5B4C2 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		82A9873C28708CC500A5B4C2 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		EFE76ACE4F6AB22CAC07492C /* Pods-Jelajah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jelajah.release.xcconfig"; path = "Target Support Files/Pods-Jelajah/Pods-Jelajah.release.xcconfig"; sourceTree = "<group>"; };
 		F63B23A5810ECB2175E6C60F /* Pods-Jelajah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jelajah.debug.xcconfig"; path = "Target Support Files/Pods-Jelajah/Pods-Jelajah.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +149,7 @@
 		82A9873B28708CBA00A5B4C2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				82A9873C28708CC500A5B4C2 /* LocationServices.swift */,
+				82A9873C28708CC500A5B4C2 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 				82859E07287070C2008759AC /* AppDelegate.swift in Sources */,
 				82A712C328707FE60036818A /* SearchRepository.swift in Sources */,
 				82A712BD2870793B0036818A /* BusinessModel.swift in Sources */,
-				82A9873D28708CC500A5B4C2 /* LocationServices.swift in Sources */,
+				82A9873D28708CC500A5B4C2 /* LocationService.swift in Sources */,
 				822D2781287173BC00AA600A /* SearchQueryModel.swift in Sources */,
 				82A712C128707FD40036818A /* Endpoint.swift in Sources */,
 			);
