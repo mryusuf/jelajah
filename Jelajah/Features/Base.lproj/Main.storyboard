@@ -21,33 +21,49 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Gop-Eb-EN0">
-                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K0C-oW-sRi">
+                                <rect key="frame" x="8" y="105" width="398" height="757"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o4z-ft-MWM">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-CR-8zT">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zbp-VA-ovg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6rT-w5-wau"/>
-                            <constraint firstItem="Gop-Eb-EN0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="axJ-Up-Pct"/>
-                            <constraint firstItem="zbp-VA-ovg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jXc-0e-0DN"/>
-                            <constraint firstItem="zbp-VA-ovg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jpM-nx-mPc"/>
-                            <constraint firstItem="Gop-Eb-EN0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pfA-LL-ztX"/>
+                            <constraint firstItem="zbp-VA-ovg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Kt-ww-A6s"/>
+                            <constraint firstItem="hHa-CR-8zT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="A9C-lk-CcH"/>
+                            <constraint firstItem="K0C-oW-sRi" firstAttribute="top" secondItem="zbp-VA-ovg" secondAttribute="bottom" constant="10" id="Exi-fs-fnT"/>
+                            <constraint firstItem="zbp-VA-ovg" firstAttribute="centerX" secondItem="K0C-oW-sRi" secondAttribute="centerX" id="OlC-Oy-weW"/>
+                            <constraint firstItem="zbp-VA-ovg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PDF-NU-Xrf"/>
+                            <constraint firstItem="K0C-oW-sRi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Vgp-If-Sz0"/>
+                            <constraint firstItem="hHa-CR-8zT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lYJ-gB-gtm"/>
+                            <constraint firstItem="K0C-oW-sRi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-8" id="lcZ-ZW-P9t"/>
+                            <constraint firstItem="K0C-oW-sRi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vI8-KX-sP9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="Gop-Eb-EN0" id="tpg-6x-o37"/>
+                        <outlet property="activityIndicator" destination="hHa-CR-8zT" id="dm3-JN-G8m"/>
+                        <outlet property="collectionView" destination="K0C-oW-sRi" id="8oC-J4-ehM"/>
                         <outlet property="searchBar" destination="zbp-VA-ovg" id="Q8Q-hY-3pd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

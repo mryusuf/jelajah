@@ -6,22 +6,29 @@
 //
 
 import RxSwift
+import RxRelay
+
+enum SortOptions {
+    case distance
+    case rating
+}
 
 protocol SearchViewModelProtocol {
-    var businessModel: Observable<BusinessModel> { get }
+    var businessItems: Observable<[Business]> { get }
     var isLoading: Observable<Bool> { get }
     func postSearchQuery(with query: String)
+    func sortItems(by option: SortOptions)
 }
 
 final class SearchViewModel: SearchViewModelProtocol {
     private let locationService: LocationServiceProtocol
     private let searchRepository: SearchRepositoryProtocol
-    private let businessModelSubject: PublishSubject<BusinessModel> = .init()
+    private let businessItemsRelay: BehaviorRelay<[Business]> = .init(value: [])
     private let isLoadingSubject: PublishSubject<Bool> = .init()
     private let disposeBag = DisposeBag()
     
-    var businessModel: Observable<BusinessModel> {
-        businessModelSubject.asObservable()
+    var businessItems: Observable<[Business]> {
+        businessItemsRelay.asObservable()
     }
     
     var isLoading: Observable<Bool> {
@@ -48,13 +55,26 @@ final class SearchViewModel: SearchViewModelProtocol {
             }
             .subscribe(onNext: { [weak self] data in
                 print(data)
-                self?.businessModelSubject.onNext(data)
+                self?.businessItemsRelay.accept(data.businesses ?? [])
             }, onError: { error in
                 print(error.asAFError?.localizedDescription)
             }, onCompleted: { [weak self] in
                 self?.isLoadingSubject.onNext(false)
             })
             .disposed(by: disposeBag)
+    }
+    
+    func sortItems(by option: SortOptions) {
+        var items = businessItemsRelay.value
+        
+        switch option {
+        case .distance:
+            items.sort(by: {($0.distance ?? 0) < ($1.distance ?? 0)} )
+        case .rating:
+            items.sort(by: {($0.rating ?? 0) > ($1.rating ?? 0)} )
+        }
+        
+        businessItemsRelay.accept(items)
     }
     
 }
